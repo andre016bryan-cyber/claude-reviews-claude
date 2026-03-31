@@ -44,6 +44,17 @@
 
 ---
 
+## 📦 源代码获取
+
+本项目的分析基于 Claude Code v2.1.88 的 TypeScript 源代码。如果你想亲自阅读源代码，以下社区仓库提供了还原后的完整代码：
+
+| 仓库 | 说明 |
+|------|------|
+| [instructkr/claw-code](https://github.com/instructkr/claw-code) | 还原后的 Claude Code 源代码 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | 从 Source Map 提取的原始 TypeScript 源码 |
+
+---
+
 ## 🧠 架构概览
 
 Claude Code 是一个包含 **1,902 个文件、47.7 万行 TypeScript** 的代码库，运行在 **Bun** 环境上，并使用 **React + Ink** 构建终端 UI。以下是其高层架构图：

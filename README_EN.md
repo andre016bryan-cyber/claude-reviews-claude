@@ -42,6 +42,17 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 
 ---
 
+## 📦 Source Code Access
+
+This project's analysis is based on the TypeScript source of Claude Code v2.1.88. If you'd like to read the source code yourself, these community repositories provide the reconstructed codebase:
+
+| Repository | Description |
+|-----------|-------------|
+| [instructkr/claw-code](https://github.com/instructkr/claw-code) | Reconstructed Claude Code source |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | Original TypeScript extracted from Source Map |
+
+---
+
 ## 🧠 Architecture Overview
 
 Claude Code is a **1,902-file, 477K-line TypeScript** codebase running on **Bun**, with a terminal UI built on **React + Ink**. Here's the high-level architecture:
