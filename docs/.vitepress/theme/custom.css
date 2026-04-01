@@ -50,6 +50,23 @@
     'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+/* --- Content width — match GitHub's ~1012px rendering width --- */
+:root {
+  --vp-layout-max-width: 1440px;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 960px;
+}
+
+.VPDoc:not(.has-aside) .content-container {
+  max-width: 960px;
+}
+
+.vp-doc {
+  max-width: none;
+}
+
 /* --- Content readability --- */
 .vp-doc {
   font-size: 16px;
