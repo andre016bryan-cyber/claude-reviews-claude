@@ -1,5 +1,9 @@
 > 🌐 **Language**: [中文版 →](README.md) | English
 
+[![📖 Read Online](https://img.shields.io/badge/📖_Read_Online-GitHub_Pages-D97757?style=for-the-badge&logo=github)](https://openedclaude.github.io/claude-reviews-claude/)
+
+> 💡 **Recommended**: This project is deployed to [GitHub Pages](https://openedclaude.github.io/claude-reviews-claude/) with full-text search, dark mode, and chapter navigation — a much better reading experience than raw GitHub Markdown.
+
 # 🪞 Claude Reviews Claude Code
 
 *An AI reading its own source code. Yes, really. Anthropic probably didn't see this coming either.*
@@ -28,24 +32,24 @@ This is **not** a source code dump. It's a structured engineering analysis — a
 
 | # | Topic | What You'll Learn | Deep Dive |
 |---|-------|-------------------|-----------|
-| 0 | **Architecture Overview** | Full landscape of 17 subsystems, engineering excellence, transferable design patterns | [Read →](architecture/00-overview.md) |
-| 1 | **QueryEngine: The Brain** | How the 1,296-line core engine manages LLM queries, tool loops, and session state | [Read →](architecture/01-query-engine.md) |
-| 2 | **Tool System Architecture** | How 42+ tools are registered, validated, and executed as self-contained modules | [Read →](architecture/02-tool-system.md) |
-| 3 | **Multi-Agent Coordinator** | How Claude Code spawns parallel workers, routes messages, and synthesizes results | [Read →](architecture/03-coordinator.md) |
-| 4 | **Plugin System** | How plugins are loaded, validated, and integrated (18.8K lines) | [Read →](architecture/04-plugin-system.md) |
-| 5 | **Hook System** | PreToolUse / PostToolUse / SessionStart extensibility (8K lines) | [Read →](architecture/05-hook-system.md) |
-| 6 | **Bash Execution Engine** | Secure command execution, sandbox, pipe management (11.5K lines) | [Read →](architecture/06-bash-engine.md) |
-| 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | [Read →](architecture/07-permission-pipeline.md) |
-| 8 | **Agent Swarms** | Multi-agent team coordination: mailbox IPC, backend detection, permission delegation (6.8K lines) | [Read →](architecture/08-agent-swarms.md) |
-| 9 | **Session Persistence** | Append-only JSONL storage, parent-UUID chains, 64KB lite resume (7.6K lines) | [Read →](architecture/09-session-persistence.md) |
-| 10 | **Context Assembly** | Three-layer context assembly: system prompts, CLAUDE.md memory, per-turn attachments (8.3K lines) | [Read →](architecture/10-context-assembly.md) |
-| 11 | **Compact System** | Three-tier compaction: microcompact, session memory compact, LLM summarization (3.9K lines) | [Read →](architecture/11-compact-system.md) |
-| 12 | **Startup & Bootstrap** | Fast-path cascade, dynamic imports, API preconnection, global state singleton (7.6K+ lines) | [Read →](architecture/12-startup-bootstrap.md) |
-| 13 | **Bridge System** | Remote control protocol, dual transport generations, poll-dispatch loop, crash recovery (11.7K lines) | [Read →](architecture/13-bridge-system.md) |
-| 14 | **UI & State Management** | Ink rendering engine, React reconciler, Vim mode, Computer Use (140+ components) | [Read →](architecture/14-ui-state-management.md) |
-| 15 | **Services & API Layer** | API client, stream reassembly, MCP server management, OAuth auth (12K lines) | [Read →](architecture/15-services-api-layer.md) |
-| 16 | **Infrastructure & Config** | Settings merge pipeline, GrowthBook feature flags, telemetry, build system (15K lines) | [Read →](architecture/16-infrastructure-config.md) |
-| 17 | **Telemetry, Privacy & Ops** | Dual-channel analytics, model codenames, undercover mode, remote killswitches, future roadmap | [Read →](architecture/17-telemetry-privacy-operations.md) |
+| 0 | **Architecture Overview** | Full landscape of 17 subsystems, engineering excellence, transferable design patterns | [Read →](https://openedclaude.github.io/claude-reviews-claude/overview) |
+| 1 | **QueryEngine: The Brain** | How the 1,296-line core engine manages LLM queries, tool loops, and session state | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/01-query-engine) |
+| 2 | **Tool System Architecture** | How 42+ tools are registered, validated, and executed as self-contained modules | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/02-tool-system) |
+| 3 | **Multi-Agent Coordinator** | How Claude Code spawns parallel workers, routes messages, and synthesizes results | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/03-coordinator) |
+| 4 | **Plugin System** | How plugins are loaded, validated, and integrated (18.8K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/04-plugin-system) |
+| 5 | **Hook System** | PreToolUse / PostToolUse / SessionStart extensibility (8K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/05-hook-system) |
+| 6 | **Bash Execution Engine** | Secure command execution, sandbox, pipe management (11.5K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/06-bash-engine) |
+| 7 | **Permission Pipeline** | Defense-in-depth: config rules → tool checks → OS sandbox (9.5K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/07-permission-pipeline) |
+| 8 | **Agent Swarms** | Multi-agent team coordination: mailbox IPC, backend detection, permission delegation (6.8K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/08-agent-swarms) |
+| 9 | **Session Persistence** | Append-only JSONL storage, parent-UUID chains, 64KB lite resume (7.6K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/09-session-persistence) |
+| 10 | **Context Assembly** | Three-layer context assembly: system prompts, CLAUDE.md memory, per-turn attachments (8.3K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/10-context-assembly) |
+| 11 | **Compact System** | Three-tier compaction: microcompact, session memory compact, LLM summarization (3.9K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/11-compact-system) |
+| 12 | **Startup & Bootstrap** | Fast-path cascade, dynamic imports, API preconnection, global state singleton (7.6K+ lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/12-startup-bootstrap) |
+| 13 | **Bridge System** | Remote control protocol, dual transport generations, poll-dispatch loop, crash recovery (11.7K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/13-bridge-system) |
+| 14 | **UI & State Management** | Ink rendering engine, React reconciler, Vim mode, Computer Use (140+ components) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/14-ui-state-management) |
+| 15 | **Services & API Layer** | API client, stream reassembly, MCP server management, OAuth auth (12K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/15-services-api-layer) |
+| 16 | **Infrastructure & Config** | Settings merge pipeline, GrowthBook feature flags, telemetry, build system (15K lines) | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/16-infrastructure-config) |
+| 17 | **Telemetry, Privacy & Ops** | Dual-channel analytics, model codenames, undercover mode, remote killswitches, future roadmap | [Read →](https://openedclaude.github.io/claude-reviews-claude/chapters/17-telemetry-privacy-operations) |
 
 > ⭐ **Enjoy the meta? Star the repo — an AI analyzing itself deserves at least that.**
 
@@ -123,14 +127,14 @@ Claude Code is a **1,902-file, 477K-line TypeScript** codebase running on **Bun*
 
 | Subsystem | Core Capability | Key Numbers | Details |
 |-----------|----------------|------------|---------|
-| ⚙️ **Query Engine** | while(true) tool loop + streaming + error recovery | 12-step state machine | [EP01](architecture/01-query-engine.md) |
-| 🔧 **Tool System** | File/Bash/Search/Agent/MCP, Schema-driven registration | 42+ tools, 30+ method contract | [EP02](architecture/02-tool-system.md) |
-| 🔐 **Permission & Security** | Rule matching → AST analysis → YOLO classifier → OS sandbox | 7-layer defense-in-depth | [EP07](architecture/07-permission-pipeline.md) |
-| 📦 **Context Management** | Micro → snip → auto → reactive compression | 4-layer cascade, 200K context | [EP11](architecture/11-compact-system.md) |
-| 🤖 **Multi-Agent** | iTerm2/tmux/in-process backends, divide-and-conquer | 7 task types | [EP08](architecture/08-agent-swarms.md) |
-| 🖥️ **Terminal UI** | Forked Ink + React 19, Vim mode, IDE bridge | 140+ components | [EP14](architecture/14-ui-state-management.md) |
+| ⚙️ **Query Engine** | while(true) tool loop + streaming + error recovery | 12-step state machine | [EP01](https://openedclaude.github.io/claude-reviews-claude/chapters/01-query-engine) |
+| 🔧 **Tool System** | File/Bash/Search/Agent/MCP, Schema-driven registration | 42+ tools, 30+ method contract | [EP02](https://openedclaude.github.io/claude-reviews-claude/chapters/02-tool-system) |
+| 🔐 **Permission & Security** | Rule matching → AST analysis → YOLO classifier → OS sandbox | 7-layer defense-in-depth | [EP07](https://openedclaude.github.io/claude-reviews-claude/chapters/07-permission-pipeline) |
+| 📦 **Context Management** | Micro → snip → auto → reactive compression | 4-layer cascade, 200K context | [EP11](https://openedclaude.github.io/claude-reviews-claude/chapters/11-compact-system) |
+| 🤖 **Multi-Agent** | iTerm2/tmux/in-process backends, divide-and-conquer | 7 task types | [EP08](https://openedclaude.github.io/claude-reviews-claude/chapters/08-agent-swarms) |
+| 🖥️ **Terminal UI** | Forked Ink + React 19, Vim mode, IDE bridge | 140+ components | [EP14](https://openedclaude.github.io/claude-reviews-claude/chapters/14-ui-state-management) |
 
-> 📐 Full architecture diagrams and reading paths → [Architecture Overview](architecture/00-overview.md)
+> 📐 Full architecture diagrams and reading paths → [Architecture Overview](https://openedclaude.github.io/claude-reviews-claude/overview)
 
 ---
 
